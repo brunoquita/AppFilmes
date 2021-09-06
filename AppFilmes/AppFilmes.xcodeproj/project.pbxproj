@@ -10,9 +10,9 @@
 		A379B89C26E6A2C700E94580 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A379B89B26E6A2C700E94580 /* AppDelegate.swift */; };
 		A379B89E26E6A2C700E94580 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A379B89D26E6A2C700E94580 /* SceneDelegate.swift */; };
 		A379B8A026E6A2C700E94580 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A379B89F26E6A2C700E94580 /* ViewController.swift */; };
-		A379B8A326E6A2C700E94580 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A379B8A126E6A2C700E94580 /* Main.storyboard */; };
 		A379B8A526E6A2CB00E94580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A379B8A426E6A2CB00E94580 /* Assets.xcassets */; };
 		A379B8A826E6A2CB00E94580 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A379B8A626E6A2CB00E94580 /* LaunchScreen.storyboard */; };
+		A379B8B426E6B92700E94580 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A379B8B326E6B92700E94580 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +20,10 @@
 		A379B89B26E6A2C700E94580 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A379B89D26E6A2C700E94580 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A379B89F26E6A2C700E94580 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A379B8A226E6A2C700E94580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A379B8A426E6A2CB00E94580 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A379B8A726E6A2CB00E94580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A379B8A926E6A2CB00E94580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A379B8B326E6B92700E94580 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,55 @@
 		A379B89A26E6A2C700E94580 /* AppFilmes */ = {
 			isa = PBXGroup;
 			children = (
+				A379B8B726E6B96E00E94580 /* SupportingFiles */,
+				A379B8B626E6B93D00E94580 /* Resource */,
+				A379B8B226E6B8AB00E94580 /* Controller */,
+				A379B8B126E6B89C00E94580 /* View */,
+				A379B8B026E6B88B00E94580 /* Model */,
 				A379B89B26E6A2C700E94580 /* AppDelegate.swift */,
 				A379B89D26E6A2C700E94580 /* SceneDelegate.swift */,
+			);
+			path = AppFilmes;
+			sourceTree = "<group>";
+		};
+		A379B8B026E6B88B00E94580 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A379B8B126E6B89C00E94580 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A379B8B326E6B92700E94580 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A379B8B226E6B8AB00E94580 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				A379B89F26E6A2C700E94580 /* ViewController.swift */,
-				A379B8A126E6A2C700E94580 /* Main.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A379B8B626E6B93D00E94580 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
 				A379B8A426E6A2CB00E94580 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A379B8B726E6B96E00E94580 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				A379B8A626E6A2CB00E94580 /* LaunchScreen.storyboard */,
 				A379B8A926E6A2CB00E94580 /* Info.plist */,
 			);
-			path = AppFilmes;
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +166,6 @@
 			files = (
 				A379B8A826E6A2CB00E94580 /* LaunchScreen.storyboard in Resources */,
 				A379B8A526E6A2CB00E94580 /* Assets.xcassets in Resources */,
-				A379B8A326E6A2C700E94580 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A379B8A026E6A2C700E94580 /* ViewController.swift in Sources */,
+				A379B8B426E6B92700E94580 /* MainView.swift in Sources */,
 				A379B89C26E6A2C700E94580 /* AppDelegate.swift in Sources */,
 				A379B89E26E6A2C700E94580 /* SceneDelegate.swift in Sources */,
 			);
@@ -146,14 +186,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A379B8A126E6A2C700E94580 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A379B8A226E6A2C700E94580 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A379B8A626E6A2CB00E94580 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,12 +319,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 3ULVJX9M45;
-				INFOPLIST_FILE = AppFilmes/Info.plist;
+				INFOPLIST_FILE = AppFilmes/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AppFilmes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -306,12 +340,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 3ULVJX9M45;
-				INFOPLIST_FILE = AppFilmes/Info.plist;
+				INFOPLIST_FILE = AppFilmes/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AppFilmes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
